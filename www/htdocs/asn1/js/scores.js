@@ -8,7 +8,7 @@ var gohome=document.createElement("button")
  			gohome.id = "gohome";
  			gohome.innerHTML = "Go Home";
  			gohome.addEventListener('click', function() 
-    		{	window.location ='game.html';}, false);
+    		{	window.location ='index.html';}, false);
 
 var playnow=document.createElement("button")
  			playnow.id = "playnow";

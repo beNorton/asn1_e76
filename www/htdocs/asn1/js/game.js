@@ -145,7 +145,7 @@ document.getElementById('pausebut').addEventListener('click', function()
  			startover.id = "startover";
  			startover.innerHTML = "Start Over";
  			startover.addEventListener('click', function() 
-    		{	window.location ='main.html';}, false);
+    		{	window.location ='index.html';}, false);
 
     		var seescores=document.createElement("button")
  			seescores.id = "seescores";
@@ -166,6 +166,124 @@ document.getElementById('pausebut').addEventListener('click', function()
  			gameboard.style.width = "400px";
  			gameboard.style.height = "400px";
  			gameboard.style.background = "blue";
+
+ 			//add fire
+ 			var firelist = ["l1fire1","l1fire2","l1fire3"];
+ 			var l1fire1=document.createElement("div");
+ 			l1fire1.id = "l1fire1"
+ 			l1fire1.style.position="absolute";
+ 			l1fire1.className = "fire";
+ 			l1fire1.style.left = "20px";
+ 			l1fire1.style.top = "300px";
+ 			l1fire1.style.height = "50px";
+ 			l1fire1.style.width = "50px";
+
+			gameboard.appendChild(l1fire1);
+
+			var l1fire2=document.createElement("div");
+ 			l1fire2.id = "l1fire2"
+ 			l1fire2.style.position="absolute";
+ 			l1fire2.className = "fire";
+ 			l1fire2.style.left = "100px";
+ 			l1fire2.style.top = "120px";
+ 			l1fire2.style.height = "50px";
+ 			l1fire2.style.width = "50px";
+
+			gameboard.appendChild(l1fire2);
+
+			var l1fire3=document.createElement("div");
+ 			l1fire3.id = "l1fire3"
+ 			l1fire3.style.position="absolute";
+ 			l1fire3.className = "fire";
+ 			l1fire3.style.left = "100px";
+ 			l1fire3.style.top = "50px";
+ 			l1fire3.style.height = "50px";
+ 			l1fire3.style.width = "50px";
+
+			gameboard.appendChild(l1fire3);
+
+			//add coins
+			var coinlist = ["l1coin1","l1coin2","l1coin3"];
+			var l1coin1=document.createElement("div");
+ 			l1coin1.id = "l1coin1"
+ 			l1coin1.style.position="absolute";
+ 			l1coin1.className = "coin";
+ 			l1coin1.style.left = "40px";
+ 			l1coin1.style.top = "20px";
+ 			l1coin1.style.height = "30px";
+ 			l1coin1.style.width = "30px";
+
+			gameboard.appendChild(l1coin1);
+
+			var l1coin2=document.createElement("div");
+ 			l1coin2.id = "l1coin2"
+ 			l1coin2.style.position="absolute";
+ 			l1coin2.className = "coin";
+ 			l1coin2.style.left = "50px";
+ 			l1coin2.style.top = "150px";
+ 			l1coin2.style.height = "30px";
+ 			l1coin2.style.width = "30px";
+
+			gameboard.appendChild(l1coin2);
+
+			var l1coin3=document.createElement("div");
+ 			l1coin3.id = "l1coin3"
+ 			l1coin3.style.position="absolute";
+ 			l1coin3.className = "coin";
+ 			l1coin3.style.left = "20px";
+ 			l1coin3.style.top = "300px";
+ 			l1coin3.style.height = "30px";
+ 			l1coin3.style.width = "30px";
+
+			gameboard.appendChild(l1coin3);
+
+			var l1goal=document.createElement("div");
+ 			l1goal.id = "l1goal"
+ 			l1goal.style.position="absolute";
+ 			l1goal.className = "goal";
+ 			l1goal.style.left = "380px";
+ 			l1goal.style.top = "380px";
+ 			l1goal.style.height = "80px";
+ 			l1goal.style.width = "80px";
+
+			gameboard.appendChild(l1goal);
+
+			var endgame=document.createElement("p");
+ 			endgame.id = "endgame"
+ 			endgame.style.position="absolute";
+ 			endgame.className = "endgame";
+ 			endgame.style.left = "20px";
+ 			endgame.style.top = "20px";
+ 			endgame.style.height = "200px";
+ 			endgame.style.width = "300px";
+
+ 			var submitscreen=document.createElement("div");
+ 			submitscreen.id = "endgame"
+ 			submitscreen.style.position="absolute";
+ 			submitscreen.className = "submitscreen";
+ 			submitscreen.style.left = "40px";
+ 			submitscreen.style.top = "100px";
+ 			submitscreen.style.height = "200px";
+ 			submitscreen.style.width = "300px";
+
+ 			var closebutt=document.createElement("button")
+ 			closebutt.id = "closebutt";
+ 			closebutt.innerHTML = "Close";
+ 			closebutt.addEventListener('click', function() 
+    		{	gameboard.removeChild(submitscreen);}, false);
+
+ 			var startover=document.createElement("button")
+ 			startover.id = "startover";
+ 			startover.innerHTML = "Start Over";
+ 			startover.addEventListener('click', function() 
+    		{	window.location ='main.html';}, false);
+
+    		var seescores=document.createElement("button")
+ 			seescores.id = "seescores";
+ 			seescores.innerHTML = "See Scores";
+ 			seescores.addEventListener('click', function() 
+    		{	window.location ='scores.html';}, false);
+
  		}
 
 
