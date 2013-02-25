@@ -3,6 +3,8 @@ window.onload=function() {
 var beep = document.getElementById("beep");
 localStorage.highscore = undefined;
 localStorage.hightime = undefined;
+// localStorage.highscore = undefined;
+// localStorage.hightime = undefined;
 
 console.log("localStorage was "+localStorage.highscore);    
 
